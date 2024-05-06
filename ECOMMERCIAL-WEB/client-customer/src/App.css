@@ -1,0 +1,1520 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+
+  justify-content: center;
+}
+
+
+/* CSS chung cho cả hai chế độ */
+body {
+  transition: background-color 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+/* Chế độ sáng */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Chế độ tối */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-light {
+  margin-left: 690px;
+}
+
+#dark-light button {
+  width: 150px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid black;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#dark-light button:hover {
+  background-color: green;
+}
+
+.dark-light {
+  display: flex;
+  margin-left: 640px;
+  background-color: #333;
+  /* Dark background color */
+  color: #fff;
+  /* Text color */
+  padding: 10px 50px;
+  /* Padding around the text */
+  border: none;
+  /* Remove border */
+  border-radius: 4px;
+  /* Add border-radius for rounded corners */
+  cursor: pointer;
+  /* Add a pointer cursor */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for color changes */
+}
+
+.dark-light:hover {
+  background-color: #555;
+  /* Darker background color on hover */
+  color: #ff0;
+  /* Text color on hover */
+}
+
+/* navbar top */
+.navbar-top {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.social-link i img {
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-link i img:hover {
+  background-color: rgb(91, 48, 0);
+  border-radius: 50px;
+}
+
+@media screen and (max-width:420px) {
+  .social-link i img {
+    width: 20px;
+  }
+}
+
+.logo h1 {
+  font-weight: bold;
+}
+
+@media screen and (max-width:420px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+
+.icons i img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:420px) {
+  .icons i img {
+    width: 20px;
+  }
+}
+
+/* navbar top */
+
+.body-customer {
+  width: 1490px;
+  height: 740px;
+  margin: 0px auto;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+div.inline {
+
+  display: inline-block;
+  margin: 10px;
+
+}
+
+.new-product {
+  display: flex;
+  text-align: center;
+
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  /* Adjust as needed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  color: #5ca92f;
+  /* Text color */
+  font-size: 24px;
+  /* Font size */
+  margin-bottom: 10px;
+  /* Margin at the bottom */
+  text-align: center;
+  text-transform: uppercase;
+  /* Convert text to uppercase */
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 7px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: rgb(94, 255, 0);
+  text-decoration: underline;
+}
+
+
+/* login sign active */
+/* menu.css */
+div.border-bottom-nav {
+  border-bottom: 1px solid black;
+  padding: 30px 0px 10px 0px;
+  margin-left: 0px;
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  /* Đường viền dưới */
+  margin-bottom: 10px;
+  /* Điều chỉnh margin theo nhu cầu */
+  list-style-type: none;
+
+  text-align: center;
+  /* Center the text within the <ul> */
+}
+
+div.float-left {
+  float: left;
+  display: flex;
+  justify-content: center;
+  /* Center the child elements horizontally */
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0px;
+  /* Adjust the margin between menu items */
+}
+
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  /* Set the color as per your design */
+  font-weight: bold;
+  /* Set the font weight as per your design */
+}
+
+.menu a:hover {
+  color: #007bff;
+  /* Set the hover color as per your design */
+}
+
+.float-left a {
+  text-decoration: none;
+  color: #333;
+  /* Màu chữ mặc định */
+  padding: 0px;
+  position: relative;
+  font-size: 18px;
+}
+
+
+
+/* Pseudo-element cho hiệu ứng gạch ngang */
+.float-left a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /* Chiều cao của gạch ngang */
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  /* Màu gạch ngang khi không hover */
+  transform: scaleX(0);
+  /* Bắt đầu với chiều rộng là 0 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Khi di chuột qua, mở rộng gạch ngang */
+.float-left a:hover::before {
+  transform: scaleX(1);
+  /* Chiều rộng là 100% khi hover */
+  transform-origin: bottom left;
+}
+
+div.float-right {
+  float: right;
+}
+
+.float-right b {
+  color: #4CAF50;
+  /* Màu chữ xanh lá cây */
+  font-weight: bold;
+  /* In đậm */
+}
+
+.float-right a {
+  text-decoration: none;
+  color: #333;
+  /* Màu chữ mặc định */
+  padding: 0px;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Pseudo-element cho hiệu ứng gạch ngang */
+.float-right a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /* Chiều cao của gạch ngang */
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  /* Màu gạch ngang khi không hover */
+  transform: scaleX(0);
+  /* Bắt đầu với chiều rộng là 0 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Khi di chuột qua, mở rộng gạch ngang */
+.float-right a:hover::before {
+  transform: scaleX(1);
+  /* Chiều rộng là 100% khi hover */
+  transform-origin: bottom left;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  /* Màu chữ mặc định */
+  padding: 0px;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Pseudo-element cho hiệu ứng gạch ngang */
+.menu li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /* Chiều cao của gạch ngang */
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  /* Màu gạch ngang khi không hover */
+  transform: scaleX(0);
+  /* Bắt đầu với chiều rộng là 0 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Khi di chuột qua, mở rộng gạch ngang */
+.menu li a:hover::before {
+  transform: scaleX(1);
+  /* Chiều rộng là 100% khi hover */
+  transform-origin: bottom left;
+}
+
+/* menu.css */
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 890px;
+  /* Adjust the margin as needed */
+}
+
+.keyword {
+  display: flex;
+  justify-content: right;
+
+}
+
+/*search*/
+/* Style the submit button if needed */
+.search input[type="submit"] {
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+
+
+
+/* main content */
+.content {
+  width: 100%;
+  height: 80vh;
+  background-image: url("./assets/image/background.png");
+  background-size: cover;
+  background-position: 70%;
+}
+
+.content {
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.content h1 {
+  font-size: 50px;
+  padding-top: 200px;
+
+}
+
+#btn1 button {
+  margin-top: 17px;
+  width: 150px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid black;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#btn1 button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width:420px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+/* content */
+/*nút 3 box đầu */
+
+.find-service1 {
+  background-color: #3498db;
+  /* Set the initial background color */
+  margin-left: 135px;
+  margin-top: 10px;
+  color: #ffffff;
+  /* Set the initial text color */
+  border: none;
+  align-self: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.find-service1:hover {
+  background-color: #2980b9;
+  /* Change the background color on hover */
+  color: #ffffff;
+  /* Change the text color on hover */
+}
+
+.find-service1::after {
+  content: ' Find Out More ';
+  /* Set the text to be revealed on hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.find-service1:hover::after {
+  opacity: 1;
+  /* Make the additional text visible on hover */
+}
+
+#banner-1,
+#banner-2,
+#banner-3 {
+  display: inline-block;
+  /* or use display: inline; */
+  vertical-align: top;
+  /* Align sections from the top */
+  margin-right: 20px;
+  /* Add some margin between sections if needed */
+  margin-left: 41px;
+  border-radius: 20px;
+  border: 1px solid rgb(110, 219, 221);
+}
+
+
+
+section {
+  border: 1px solid #ccc;
+  /* Đường viền cho từng section, bạn có thể thay đổi hoặc bỏ đi */
+  padding: 20px;
+}
+
+/* content */
+/*nút 3 box đầu */
+
+
+/* Thêm CSS để trang trí nếu cần */
+h4 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+span {
+  color: #e44d26;
+  /* Màu cho phần giảm giá */
+}
+
+
+
+/* phần nội dung ở giữa */
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-image: url("./assets/image/bern.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-size 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#sm-banner .banner-box:hover {
+  background-size: 110%;
+  /* Adjust the size as per your preference */
+}
+
+#sm-banner .banner-box h4,
+#sm-banner .banner-box h2,
+#sm-banner .banner-box span,
+#sm-banner .banner-box button {
+  opacity: 0;
+  /* Initially hide the elements */
+  transition: opacity 0.3s ease-in-out;
+  /* Adding a smooth transition effect */
+}
+
+#sm-banner .banner-box:hover h4,
+#sm-banner .banner-box:hover h2,
+#sm-banner .banner-box:hover span,
+#sm-banner .banner-box:hover button {
+  opacity: 3;
+  /* Make the elements visible on hover */
+}
+
+
+#sm-banner .banner-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-image: url("./assets/image/sf.png");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+
+}
+
+#sm-banner .banner-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-image: url("./assets/image/furn1.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#sm-banner .banner-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-image: url("./assets/image/work\ desk.png");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 160px;
+  padding-top: 10px;
+}
+
+#sm-banner h4 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#sm-banner h2 {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#sm-banner span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #000000;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 0.3s;
+}
+
+#sm-banner button:hover {
+  background: #088178;
+  color: #000000;
+}
+
+
+
+/* new produc */
+#banner-product {
+  display: inline-block;
+  margin: 8px;
+  /* or use display: inline; */
+  vertical-align: top;
+  /* Align sections from the top */
+  margin-right: 5px;
+  /* Add some margin between sections if needed */
+  margin-left: 100px;
+  border-radius: 20px;
+  border: 1px solid rgb(110, 219, 221);
+  align-content: center;
+}
+
+
+.section {
+  border: 1px solid #ccc;
+  /* Đường viền cho từng section, bạn có thể thay đổi hoặc bỏ đi */
+  padding: 50px;
+}
+
+/*nút new product*/
+
+.dark {
+  background-color: #3498db;
+  /* Set the initial background color */
+  margin-left: 100px;
+  margin-top: 10px;
+  color: #ffffff;
+  /* Set the initial text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+
+.dark:hover {
+  background-color: #2980b9;
+  /* Change the background color on hover */
+  color: #ffffff;
+  /* Change the text color on hover */
+}
+
+.dark::after {
+  content: ' BUY NOW ';
+  /* Set the text to be revealed on hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+
+}
+
+.dark:hover::after {
+  opacity: 1;
+  /* Make the additional text visible on hover */
+}
+
+/*nút new product*/
+
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*about*/
+.about {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+}
+
+.about-img,
+.about-img2,
+.about-text,
+.about-text2 {
+  flex: 0 0 48%;
+  /* Chia đôi chiều rộng của container, để lại khoảng trắng giữa các phần tử */
+}
+
+.about-text,
+.about-text2 {
+  margin-bottom: 50px;
+  flex: 0 0 48%;
+  /* Chia đôi chiều rộng của container, để lại khoảng trắng giữa các phần tử */
+}
+
+.about-img img,
+.about-img2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Nếu bạn muốn thêm khoảng cách giữa các phần tử, bạn có thể sử dụng margin */
+.about-img2 {
+  order: 2;
+  /* Đặt hình ảnh thứ hai ở bên phải */
+}
+
+.about-text.h2 {
+  text-align: center;
+}
+
+
+
+/* Thêm các CSS khác theo nhu cầu của bạn */
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 30px;
+  color: #000000;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+#btn button:hover {
+  background: #088178;
+  color: #000000;
+}
+
+
+
+/* foooterrrrr */
+/* Add this CSS to your existing stylesheet or create a new one */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo h3 {
+  margin: 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-social i {
+  margin-right: 10px;
+}
+
+
+
+/* blog */
+.text-title {
+
+  text-align: center;
+  margin-top: 40px;
+}
+
+.blog-text p {
+  display: flex;
+  margin-left: 300px;
+  justify-content: center;
+  text-align: center;
+  max-width: 910px;
+}
+
+.blog-text2 p {
+  display: flex;
+  margin-left: 130px;
+  justify-content: center;
+  max-width: 910px;
+}
+
+
+
+
+
+.blog-img3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-image: url("./assets/image/sf.png");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0px;
+
+}
+
+
+
+#sm-banner .banner-box4 {
+  display: flex;
+  background-image: url("./assets/image/b1.webp");
+
+}
+
+#sm-banner .banner-box5 {
+  display: flex;
+  background-image: url("./assets/image/b2.jpg");
+}
+
+
+.blog-text2 h1 {
+  text-align: center;
+  margin-left: 470px;
+}
+
+#banner-4 {
+  display: inline-block;
+  /* or use display: inline; */
+  vertical-align: top;
+  /* Align sections from the top */
+  margin-right: 20px;
+  /* Add some margin between sections if needed */
+  margin-left: 26px;
+  align-content: center;
+}
+
+/* blog*/
+.row {
+  display: flex;
+  margin-left: 64px;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.image-container {
+  margin: 0 5px;
+  /* Adjust the margin between images */
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-caption {
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-box:hover .image-caption {
+  opacity: 1;
+}
+
+
+
+/*btn about home*/
+.btn {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+/* comment */
+
+
+.comment-form-container {
+
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 40px;
+  margin-right: 114px;
+  margin-left: 114px;
+}
+
+h2 {
+  color: #333;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #555;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+iframe {
+  display: flex;
+  margin-left: 344px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  /* Green background color */
+  color: white;
+  /* White text color */
+  padding: 10px 20px;
+  /* Padding around the text */
+  font-size: 16px;
+  /* Font size of the text */
+  border: none;
+  /* Remove border */
+  border-radius: 4px;
+  /* Add border-radius for rounded corners */
+  cursor: pointer;
+  /* Add a pointer cursor on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 250px;
+}
+
+.contact-info div {
+  flex-basis: calc(33.33% - 50px);
+  /* 33.33% width with 10px spacing */
+  margin: 5px;
+  /* Adjust margin as needed */
+}
+
+.contact-info h4 {
+  margin: 0;
+}
+
+.text-centerr {
+  display: flex;
+  text-align: center;
+}
+
+/*contact*/
+.comment-form-container1 {
+
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 40px;
+  margin-right: 114px;
+  margin-left: 240px;
+}
+
+
+
+
+/*profile*/
+input[type="submit-profile"] {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  /* Submit button color */
+  color: #fff;
+  /* Text color */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for color changes */
+}
+
+input[type="submit-profile"]:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+  color: #fff;
+  /* Text color on hover */
+}
+
+
+/* item list*/
+
+
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.datatable th,
+.datatable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.datatable th {
+  background-color: #f2f2f2;
+  /* Header background color */
+}
+
+.datatable tr:hover {
+  background-color: #f5f5f5;
+  /* Hover background color */
+}
+
+
+
+
+/* product detail */
+.align-center-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.caption-right {
+  display: inline-block;
+  position: relative;
+}
+
+
+tr {
+  width: 100px;
+  /* Set the width of each cell */
+  margin: 20px;
+  /* Add margin to create space between cells */
+  background-color: #f5f5f5;
+  /* Background color for cells */
+  padding: 100px;
+  /* Padding for cells */
+  border-radius: 10px;
+  /* Border radius for rounded corners */
+}
+
+.caption-right img {
+  display: block;
+  width: 450px;
+  height: auto;
+  border: 4px solid #ddd;
+  /* Border color for the image */
+  border-radius: 10px;
+  /* Adjust border-radius for rounded corners */
+}
+
+
+input[type="number"],
+input[type="submitr"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submitr"] {
+  background-color: #007BFF;
+  /* Submit button color */
+  color: #fff;
+  /* Text color */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Smooth transition for color changes */
+}
+
+input[type="submitr"]:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+}
+
+
+/* nút ở trang sản phẩm */
+
+
+.furniture {
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  /* Hiệu ứng chuyển đổi trong 0.3 giây */
+}
+
+.furniture:hover {
+  background-color: #fff;
+  /* Màu nền khi hover */
+  color: #3498db;
+  /* Màu chữ khi hover */
+}
+
+/* nút ở trang sản phẩm */
+
+/* sản phẩm */
+.inline-furniture {
+  display: inline-block;
+  margin: 10px;
+  /* Khoảng cách giữa các sản phẩm */
+  border: 1px solid #ddd;
+  /* Viền xung quanh sản phẩm */
+  padding: 10px;
+  /* Khoảng cách từ nội dung đến viền */
+}
+
+.inline-furniture figure {
+  text-align: center;
+  /* Căn giữa nội dung trong figure */
+}
+
+.inline-furniture img {
+  max-width: 100%;
+  /* Đảm bảo hình ảnh không vượt quá kích thước của phần tử cha */
+  border-radius: 5px;
+  /* Bo góc cho hình ảnh */
+}
+
+.text-center {
+  text-align: center;
+  /* Căn giữa nội dung văn bản */
+
+  margin-top: 8px;
+  /* Khoảng cách giữa tên sản phẩm và giá */
+}
+
+.btn-furniture {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* Khoảng cách giữa nút và nội dung bên trên */
+}
+
+.furniture {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  /* Hiệu ứng chuyển đổi trong 0.3 giây */
+}
+
+.furniture:hover {
+  background-color: #fff;
+  /* Màu nền khi hover */
+  color: #3498db;
+  /* Màu chữ khi hover */
+}
+
+
+.to-top {
+  width: 50px;
+  height: 50px;
+  background-color: #088178;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+}
+
+.to-top:hover {
+  color: #000000;
+  background-color: #007bff;
+}
+
+
+td.box {
+  margin-left: 10px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.submit-comment-link {
+  /* Your existing styles */
+  color: #000;
+  /* Set your default text color */
+
+  /* Button-like styles */
+  display: inline-block;
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: 2px solid #007bff;
+  /* Set border color */
+  border-radius: 5px;
+  /* Add rounded corners if desired */
+  text-decoration: none;
+  /* Remove underline style */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add smooth transitions */
+}
+
+.submit-comment-link:hover {
+  background-color: #007bff;
+  /* Change the background color on hover */
+  color: #fff;
+  /* Change the text color on hover */
+}
+
+
+
+/*blog submit*/
+.submit-comment-link {
+  /* Your existing styles */
+  color: #000;
+  /* Set your default text color */
+
+  /* Button-like styles */
+  display: flex;
+  width: 200px;
+  text-align: center;
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: 2px solid #007bff;
+  /* Set border color */
+  border-radius: 5px;
+  /* Add rounded corners if desired */
+  text-decoration: none;
+  /* Remove underline style */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add smooth transitions */
+}
+
+.submit-comment-link:hover {
+  background-color: #007bff;
+  /* Change the background color on hover */
+  color: #fff;
+  /* Change the text color on hover */
+}
+
+.copyright {
+  text-align: center;
+  margin-left: 60px;
+}
+
+.footer-logo h3 {
+  margin-top: 15px;
+}
+
+
+/*View more*/
+.h4 {
+  display: flex;
+  margin-right: 200px;
+  font-size: 100px;
+}
+
+.view-more {
+  /* Your existing styles */
+  color: #000;
+  /* Set your default text color */
+
+  /* Button-like styles */
+  display: inline-block;
+  margin-left: 1275px;
+
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: 2px solid #007bff;
+  /* Set border color */
+  border-radius: 5px;
+  /* Add rounded corners if desired */
+  text-decoration: none;
+  /* Remove underline style */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add smooth transitions */
+}
+
+.view-more:hover {
+  background-color: #007bff;
+  /* Change the background color on hover */
+  color: #fff;
+  /* Change the text color on hover */
+}

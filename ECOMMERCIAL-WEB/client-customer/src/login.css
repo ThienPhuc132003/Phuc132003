@@ -1,0 +1,17 @@
+.align-centerr {
+    position: relative;
+  }
+  
+  .align-centerr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/09/hinh-nen-cute-co-chu.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    z-index: -2;
+  }
