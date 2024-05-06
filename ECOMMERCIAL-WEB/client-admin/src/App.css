@@ -1,0 +1,297 @@
+/* styles.css */
+.body-customer {
+
+  width: 1250px;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+.body-admin {
+
+  width: 1200px;
+
+  margin: 0px auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+/*login lúc đầu */
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+  color: #5ca92f;
+  /* Text color */
+  font-size: 24px;
+  /* Font size */
+  margin-bottom: 20px;
+  /* Margin at the bottom */
+  text-transform: uppercase;
+  /* Convert text to uppercase */
+}
+
+
+
+td {
+  padding: 2px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submitlogin"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*login lúc đầu */
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+
+/* css các thẻ tab trên cùng */
+div.float-left {
+  float: left;
+}
+
+.float-left a {
+  text-decoration: none;
+  color: #333;
+  /* Màu chữ mặc định */
+  padding: 0px;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Pseudo-element cho hiệu ứng gạch ngang */
+.float-left a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /* Chiều cao của gạch ngang */
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  /* Màu gạch ngang khi không hover */
+  transform: scaleX(0);
+  /* Bắt đầu với chiều rộng là 0 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Khi di chuột qua, mở rộng gạch ngang */
+.float-left a:hover::before {
+  transform: scaleX(1);
+  /* Chiều rộng là 100% khi hover */
+  transform-origin: bottom left;
+}
+
+div.float-right {
+  float: right;
+}
+
+.float-right a {
+  text-decoration: none;
+  color: #333;
+  /* Màu chữ mặc định */
+  padding: 0px;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Pseudo-element cho hiệu ứng gạch ngang */
+.float-right a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /* Chiều cao của gạch ngang */
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  /* Màu gạch ngang khi không hover */
+  transform: scaleX(0);
+  /* Bắt đầu với chiều rộng là 0 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Khi di chuột qua, mở rộng gạch ngang */
+.float-right a:hover::before {
+  transform: scaleX(1);
+  /* Chiều rộng là 100% khi hover */
+  transform-origin: bottom left;
+}
+
+/* css các thẻ tab trên cùng */
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+form.search {
+  margin: 0px;
+}
+
+input.keyword {
+  width: 110px;
+}
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+.nen {
+  background-color: lightblue;
+}
+
+.align-valign-center::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/09/hinh-nen-cute-co-chu.jpg');
+  background-size: cover;
+  background-position: center;
+
+  z-index: -2;
+}
+
+
+/* customer */
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.datatable th,
+.datatable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.datatable th {
+  background-color: #f2f2f2;
+  /* Header background color */
+}
+
+.datatable tr:hover {
+  background-color: #f5f5f5;
+  /* Hover background color */
+}
+
+.link {
+  color: #007BFF;
+  /* Link color */
+  cursor: pointer;
+  transition: color 0.3s;
+  /* Smooth transition for color changes */
+}
+
+.link:hover {
+  color: rgb(204, 88, 88);
+  /* Darker color on hover */
+}
+
+
+/*category*/
+
+
+.float-right input[type="submit"] {
+  background-color: #4caf50;
+  /* Green background color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.float-right input[type="submit"]:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+  color: #fff;
+}
